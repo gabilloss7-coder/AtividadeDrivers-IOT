@@ -1,12 +1,12 @@
 
-#TESTE BÁSICO MODBUS TCP pymodbus
-#Lê e escreve um registrador simples para testar a comunicação.
+#TESTE MODBUS TCP pymodbus
+#Lê e escreve um registrador para testar a comunicação.
 
 
 from pymodbus.client import ModbusTcpClient
 from pymodbus.exceptions import ModbusException
 
-IP = "192.168.0.10"  # altere para o IP do inversor / PC do professor
+IP = "192.168.0.10"  # PC do professor
 PORT = 502
 SLAVE = 2            # endereço Modbus
 
@@ -53,3 +53,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
